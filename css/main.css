@@ -3,6 +3,10 @@ body {
     height: 100%;
     margin: 0 auto;
 }
+ul {
+    padding: 0px !important
+
+}
 .menu-principal {
     width: 100%;
     background-color: black;
@@ -15,12 +19,12 @@ main {
 }
 .logo {
     float: left;
-    padding: 16px;
+    padding: 5px;
     width: 70%;
 }
 
-.redes-sociais ul  li {
-    margin-left: 10px;
+.redes-sociais ul li {
+    margin-left: 25px;
     display: inline-block;
     float: left;
     list-style: none;
@@ -31,11 +35,65 @@ main {
 }
 .header-2 {
     background-color: white;
-    width: 100%;
-    border-radius: 3px solid;
+    width: 980px;
+    margin: 0 auto; 
+    padding: 16px;   
     }
+
+.menu-urls {
+    height: 80px;
+    border-bottom: 3px solid wheat;
+}
 .menu ul li {
     display: inline-block;
+    color: #c1c1c1;
+    margin-left: 15px;
+    height: 48px;
+}
+
+.menu ul li:hover {
+    border-bottom: 3px solid goldenrod;
+    }
+
+.menu ul li a:hover {
+    color: goldenrod;
+    }
+
+.menu ul li a {
+    color: #c1c1c1;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
 
 
+
+
+
+
+.menu {
+    width: 70%;
+    float: left;
+}
+.busca {
+    text-align: center;
+    width: 30%;
+    float: right;
+    }
+.busca input {
+    background-image: url(../img/icone-search.png);
+    background-repeat: no-repeat;
+    background-position: 96%;
+    height: 36px;
+    margin-top: 10px;
+    padding: 15px;
+    width: 190px;
+    border: 1px solid #c1c1c1;
+
+}
+
+.col-100 {
+    width: 100%;
+    float: left;
+    position: relative;
 }
