@@ -66,20 +66,17 @@ main {
     text-transform: uppercase;
 }
 
-
-
-
-
-
 .menu {
     width: 70%;
     float: left;
+
 }
 .busca {
     text-align: center;
     width: 30%;
     float: right;
     }
+
 .busca input {
     background-image: url(../img/icone-search.png);
     background-repeat: no-repeat;
@@ -96,4 +93,66 @@ main {
     width: 100%;
     float: left;
     position: relative;
+
 }
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+   position: absolute;
+    background-image: url(../img/anterior.png);
+    top: 29%;
+    left: 14%;
+}
+
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/proximo.png);
+    top: 29%;
+    right: 14%;
+    }
+
+    /* ul.slick-dots li button {
+        font-size: 0;
+        border: 3px solid white;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;        
+    }
+
+    ul.slick-dots li.slick-active button{
+        background-color: goldenrod; 
+
+    } */
+
+    .slick-initialized {
+        overflow: hidden;
+    }
+
+    .slick-dots li button {
+        font-size: 0px;
+        border: 2px solid white;
+        
+
+    }
+
+    .slick-dots {
+        margin: 0 auto;
+        width: 50%;
+        position: relative;
+        left: 22%;
+      
+    }
+    .slick-dots li {
+        display: inline-block;
+    }
