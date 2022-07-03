@@ -12,7 +12,7 @@ ul {
     background-color: black;
     height: 60px;
 }
-main {
+main, .content {
     margin: 0 auto;
     width: 980px;
     position: relative;
@@ -93,7 +93,6 @@ main {
     width: 100%;
     float: left;
     position: relative;
-
 }
 
 button.slick-prev {
@@ -107,6 +106,7 @@ button.slick-prev {
     background-image: url(../img/anterior.png);
     top: 29%;
     left: 14%;
+    cursor: pointer;
 }
 
 button.slick-next {
@@ -120,20 +120,12 @@ button.slick-next {
     background-image: url(../img/proximo.png);
     top: 29%;
     right: 14%;
+    cursor: pointer;
     }
 
-    /* ul.slick-dots li button {
-        font-size: 0;
-        border: 3px solid white;
-        border-radius: 100%;
-        width: 20px;
-        height: 20px;        
+    .slick-list {
+        width: 100%!important;
     }
-
-    ul.slick-dots li.slick-active button{
-        background-color: goldenrod; 
-
-    } */
 
     .slick-initialized {
         overflow: hidden;
@@ -141,18 +133,54 @@ button.slick-next {
 
     .slick-dots li button {
         font-size: 0px;
-        border: 2px solid white;
-        
+        border: 3px solid goldenrod;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-radius: 50%;
+        cursor: pointer;
 
     }
 
     .slick-dots {
         margin: 0 auto;
         width: 50%;
-        position: relative;
-        left: 22%;
+        position: absolute;
+        left: 50%;
+        top: 420px;
       
     }
+
+    li.slick-active button {
+        background:white;
+    }
+
     .slick-dots li {
+        padding-left: 10px;
         display: inline-block;
     }
+
+.texto-destaque {
+    text-align: center;
+    margin-top: -10%;
+}
+
+.texto-destaque strong {
+    color: rgb(95, 93, 93);
+}
+
+.texto-destaque h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: gray;
+   }
+
+.texto-destaque p {
+    font-size: 15px;
+    color: gray;
+
+    }
+.col-3 {
+ display: inline-block;
+ padding-left: 30px;
+}
